@@ -5,6 +5,7 @@ import copy
 from .models import TreeNode, NodeMapping
 from .serializers import NodeMappingSerializer, FilteredTreeNodeSerializer
 
+
 def populateChildren(currNode, nodesList, mappings):
     childrenIdList = [m['childId'] for m in mappings if m['parentId'] == currNode['componentId']]
 
