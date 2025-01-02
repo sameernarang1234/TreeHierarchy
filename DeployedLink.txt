@@ -1,0 +1,5 @@
+The React Js Frontend of the application is deployed on Vercel
+and the Backend is deployed on Digitalocean.
+
+Link for accessing the application on web:
+https://tree-hierarchy.vercel.app/
