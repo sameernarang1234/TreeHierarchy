@@ -52,7 +52,8 @@ export default function RootTag() {
 
   useEffect(() => {
     if (treeData.isInitialLoad) {
-      const url = "http://206.189.135.103:80/api/tree/"
+      // const url = "https://206.189.135.103:443/api/tree/"
+      const url = "/api/proxy"
 
       axios.get(url).then(response => {
         const responseData = response.data
@@ -128,12 +129,14 @@ export default function RootTag() {
       }
     }
 
+    const url = "/api/proxy"
+
     if (!isNewTreeHierarachyAdded) {
-      const url = "http://206.189.135.103:80/api/update-tree/"
+      // const url = "https://206.189.135.103:443/api/update-tree/"
       callUpdateTreeAPI(url, apiPayload)
     }
     else {
-      const url = "http://206.189.135.103:80/api/add-new-tree/"
+      // const url = "https://206.189.135.103:443/api/add-new-tree/"
       callAddNewTreeAPI(url, apiPayload)
     }
   }
