@@ -1,0 +1,22 @@
+Tag View Project:
+
+Tag View is a React + Python (Django Rest Framework) based web utility to create multiple nested TreeStructures, hosted on Vercel and Digitalocean.
+
+Link to Hosted Application: https://tree-hierarchy.vercel.app/
+
+In order to run Vercel on your local PC / Mac, please make the following changes in few of the files 
+in TagViewFrontend/tree_of_tags directory after cloning the repository:
+
+1. TagViewFrontend/tree_of_tags/api/proxy.js:
+
+The line number 1 is : const apiUrl = 'http://206.189.135.103:80/api/'
+Please change it to : const apiUrl = 'http://127.0.0.1:8000/api/'
+
+2. TagViewFrontend/tree_of_tags/src/components/RootTag.js:
+Please Uncomment the line numbers 55, 135 and 139 and please comment the line numbers 56 and 132
+
+After doing above changes, inside TagViewFrontend/tagtree, run "npm install", followed by 
+"npm run start" or "npm start" and inside TagViewBackend/tagtree, run "python* -m pip install -r requirements.txt" 
+followed by "python* manage.py runserver", where, python* indicates suitable python version installed in your system.
+
+Please go on the link: http://localhost:3000/ to see the application running in your local computer
