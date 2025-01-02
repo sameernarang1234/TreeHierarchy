@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6elp!9j+il=ac*)s-qqxy53yq31#f=f$&5-*&(^b+2(i8nts9d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['139.59.11.45']
 
 
 # Application definition
@@ -77,23 +77,23 @@ WSGI_APPLICATION = 'tagtree.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'TreeHierarchyDB',
-        'USER': 'sameernarang',
-        'PASSWORD': 'TreeHierarchy1234',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'TreeHierarchyDB',
+#         'USER': 'sameernarang',
+#         'PASSWORD': 'TreeHierarchy1234',
+#         'HOST': 'localhost',
+#         'PORT': '5432'
+#     }
+# }
 
 
 # Password validation
